@@ -7,6 +7,11 @@
 	<link rel="shortcut icon" href="./favicon.ico"/>
 	<title>Hack NTU</title>
 	<!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
+	<!--[if !IE]><script>
+	if (/*@cc_on!@*/false) {
+		document.write('<script type="text/javascript" src="./javascripts/fucking-IE.js"></script>');
+	}
+	</script><![endif]-->
 	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -59,15 +64,15 @@
 			<h1 data-100-top="opacity: 0; left:-100px;" data-0-top="opacity:1;left:0;">WHAT YOU CAN DO?</h1>
 
 			<div class="coding" data--0-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--200-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:0px;" data--800-center-center="top:300px;">
-				<h1 id="res_code">10小時不斷電Coding奮戰</h1>
+				<h1 id="res_code" class="chi-type">10小時不斷電Coding奮戰</h1>
 				<img class="icon" src="images/coding.png" alt="">
 			</div>
 			<div class="food" data--0-center-center="transform: rotateY(90deg); transform-origin:100% 0%; opacity: 0; " data--200-center-center="opacity:1; transform: rotateY(0deg); transform-origin:100% 0%; top:100px;" data--600-center-center="top:250px;">
 				<img class="icon" src="images/pizza.png" alt="">
-				<h1>美味Pizza甜點飲料瘋狂暢飲</h1>
+				<h1 class="chi-type">美味Pizza甜點飲料瘋狂暢飲</h1>
 			</div>
 			<div class="famous" data--00-center-center="transform: rotateY(90deg); transform-origin:0% 0%; opacity: 0; " data--200-center-center="opacity:1; transform: rotateY(0deg); transform-origin:0% 0%; top:200px;" data--400-center-center="top:210px;">
-				<h1>3分鐘刺激成果展示一戰成名</h1>
+				<h1 class="chi-type">3分鐘刺激成果展示一戰成名</h1>
 				<img class="icon" src="images/crest.png" alt="">
 			</div>
 		</div>
@@ -104,7 +109,7 @@
 	<section class="slide join">
 		<div class="block">
 			<h1 data--400-top="opacity: 0; left:-100px;" data--600-top="opacity:1;left:0;">Let' Rock!</h1>
-			<a class="button" href="http://registrano.com/events/274c53" data--300-top="opacity: 0; transform:scale(0.5);" data--500-top="opacity:1; transform:scale(1);">立馬報名</a>
+			<a class="button" href="http://registrano.com/events/hackntu2013" data--300-top="opacity: 0; transform:scale(0.5);" data--500-top="opacity:1; transform:scale(1);">立馬報名</a>
 		</div>
 	</section>
 
@@ -195,7 +200,7 @@
   $("#resp_head2").fitText(0.5);
   $("#resp_head3").fitText(1.04);
   $("#resp_head4").fitText(0.6);
-  $("#res_code").fitText(0.95);
+  $("#res_code").fitText(1.1);
 </script>
 <script>
 	function resizePages() {
