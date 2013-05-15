@@ -635,7 +635,7 @@ ul.arrow {
 ul.arrow li:last-child {
   width: 100%;
   height: 32px;
-  background: url("/images/arrowl.png");
+  background: url("../images/arrowl.png");
   animation-delay: 0.2s;
   -webkit-animation-delay: 0.2s;
   -moz-animation-delay: 0.2s;
@@ -644,7 +644,7 @@ ul.arrow li:last-child {
 ul.arrow li {
   margin-top: -16px;
   height: 32px;
-  background: url("/images/arrows.png");
+  background: url("../images/arrows.png");
   animation: arrow 2s infinite;
   -moz-animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite;
@@ -911,7 +911,7 @@ ul.arrow li {
 }
 /* line 477, ../sass/screen.scss */
 .join h1 {
-  margin-bottom: 15%;
+  margin: 10% 0 8%;
 }
 /* line 480, ../sass/screen.scss */
 .join a.button {
@@ -946,19 +946,70 @@ ul.arrow li {
   background: #EAE5D8;
   color: #935524;
 }
+/* line 506, ../sass/screen.scss */
+.sponsor .item {
+  margin: 20px 2%;
+  display: inline-block;
+  width: 25%;
+  border: 20px rgba(0, 0, 0, 0.1) solid;
+  border-radius: 15px;
+}
+/* line 508, ../sass/screen.scss */
+.sponsor .item:first-child {
+  margin-left: 0;
+}
+/* line 512, ../sass/screen.scss */
+.sponsor .item:last-child {
+  margin-right: 0;
+}
+/* line 520, ../sass/screen.scss */
+.sponsor .item h2 {
+  border-top: 5px #da7d00 solid;
+  margin: -0.3em 0 0;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  background: #FFAE41;
+  text-align: center;
+  color: #935524;
+}
+/* line 530, ../sass/screen.scss */
+.sponsor .item h2.wait {
+  border-top: 5px #777777 solid;
+  background: #aaa;
+  color: #777777;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+}
+/* line 536, ../sass/screen.scss */
+.sponsor .item a {
+  text-decoration: none;
+}
+/* line 539, ../sass/screen.scss */
+.sponsor .item a:hover {
+  text-decoration: none;
+}
 
-/* line 507, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
 .staff {
+  position: relative;
   background: #935524;
   color: #fff;
 }
-/* line 510, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
+.staff h1 {
+  margin: 1em 0 0.8em;
+}
+/* line 552, ../sass/screen.scss */
 .staff .person {
+  position: relative;
   margin: 30px auto;
   width: 900px;
-  background-position: -120px 0;
 }
-/* line 514, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
+.staff .person:last-child {
+  margin-bottom: 100px;
+}
+/* line 559, ../sass/screen.scss */
 .staff .person img {
   display: inline-block;
   position: relative;
@@ -969,7 +1020,7 @@ ul.arrow li {
   margin: 0;
   vertical-align: top;
 }
-/* line 524, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .staff .person .information {
   margin-left: -65px;
   padding: 0 30px 0 70px;
@@ -977,33 +1028,66 @@ ul.arrow li {
   width: 680px;
   display: inline-block;
 }
-/* line 531, ../sass/screen.scss */
+/* line 576, ../sass/screen.scss */
 .staff .person .information a.name {
   text-decoration: none;
   color: #0D96CD;
   font-size: 1.6em;
 }
-/* line 535, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .staff .person .information a.name:hover {
-  color: #11639D;
+  color: #1cb4f1;
 }
-/* line 539, ../sass/screen.scss */
+/* line 585, ../sass/screen.scss */
 .staff .person .information a {
   text-decoration: none;
   color: #aaa;
   font-size: 1.2em;
 }
-/* line 543, ../sass/screen.scss */
+/* line 589, ../sass/screen.scss */
 .staff .person .information a:hover {
-  color: #ddd;
+  color: #c3c3c3;
 }
-/* line 547, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 .staff .person .information p {
   margin: 2px;
 }
 
-/* line 553, ../sass/screen.scss */
+/* line 600, ../sass/screen.scss */
 footer {
+  position: relative;
+  overflow: hidden;
   background: #0C2C4C;
   color: #fff;
+  height: 140px;
+}
+/* line 606, ../sass/screen.scss */
+footer div {
+  margin: 30px auto 0;
+  width: 160px;
+}
+/* line 609, ../sass/screen.scss */
+footer div h2 {
+  font-family: "Patua One", cursive;
+  font-size: 2em;
+  margin: 0;
+}
+/* line 614, ../sass/screen.scss */
+footer div a {
+  color: #ddd;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 618, ../sass/screen.scss */
+footer div a:hover {
+  color: #1d6cba;
+}
+/* line 623, ../sass/screen.scss */
+footer a.author {
+  margin-top: 5px;
+  display: block;
+  text-decoration: none;
+  color: #999;
+  text-align: center;
+  font-size: 13px;
 }
