@@ -7,11 +7,27 @@
 	<link rel="shortcut icon" href="./favicon.ico"/>
 	<title>Hack NTU</title>
 	<!--[if IE]> <script type="text/javascript" src="./javascripts/fucking-IE.js"></script> <![endif]-->
-	<!--[if !IE]><script>
-	if (/*@cc_on!@*/false) {
-		document.write('<script type="text/javascript" src="./javascripts/fucking-IE.js"></script>');
-	}
-	</script><![endif]-->
+	<script>
+		function getIEVersion(){
+		    var agent = navigator.userAgent;
+		    var reg = /MSIE\s?(\d+)(?:\.(\d+))?/i;
+		    var matches = agent.match(reg);
+		    if (matches != null) {
+		        return { major: matches[1], minor: matches[2] };
+		    }
+		    return { major: "-1", minor: "-1" };
+		}
+		function hackir(){
+			var ss = document.createElement('script');
+			ss.src = "./javascripts/fucking-IE.js";
+			var hh = document.getElementsByTagName('head')[0];
+			hh.appendChild(ss);
+		}
+		var ie_version =  getIEVersion();
+		var is_ie10 = ie_version.major == 10;
+		if(is_ie10)
+			hackir();
+	</script>
 	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -109,7 +125,7 @@
 	<section class="slide join">
 		<div class="block">
 			<h1 data--400-top="opacity: 0; left:-100px;" data--600-top="opacity:1;left:0;">Let' Rock!</h1>
-			<a class="button" href="http://registrano.com/events/hackntu2013" data--300-top="opacity: 0; transform:scale(0.5);" data--500-top="opacity:1; transform:scale(1);">立馬報名</a>
+			<a class="button" href="http://www.accupass.com/go/hackntu_2013" data--300-top="opacity: 0; transform:scale(0.5);" data--500-top="opacity:1; transform:scale(1);">立馬報名</a>
 		</div>
 	</section>
 
